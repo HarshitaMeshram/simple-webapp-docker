@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myimg
+spec:
+  selector:
+    matchLabels:
+      app: flask-webapp
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: flask-webapp
+    spec:
+      containers:
+      - name: myimg
+        image: armansk9129/flask_webapp_arman:v1
+        ports:
+        - containerPort: 8080

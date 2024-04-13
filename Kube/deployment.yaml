@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myimg
-        image: armansk9129/flask_webapp_arman:v1
+        image: harshitameshram/flaskwebappharsh:version1
         ports:
         - containerPort: 8080
